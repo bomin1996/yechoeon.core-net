@@ -1,0 +1,289 @@
+﻿/* @font-face {  font-family: 'NanumSquareNeo'; src: url('assets/fonts/NaverNanumSquareNeo_woff/NanumSquareNeoTTF-aLt.woff') format("woff");  font-weight: 300; }
+@font-face {  font-family: 'NanumSquareNeo'; src: url('assets/fonts/NaverNanumSquareNeo_woff/NanumSquareNeoTTF-bRg.woff') format("woff");  font-weight: 400; }
+@font-face {  font-family: 'NanumSquareNeo'; src: url('assets/fonts/NaverNanumSquareNeo_woff/NanumSquareNeoTTF-cBd.woff') format("woff");  font-weight: 700; }
+@font-face {  font-family: 'NanumSquareNeo'; src: url('assets/fonts/NaverNanumSquareNeo_woff/NanumSquareNeoTTF-dEb.woff') format("woff");  font-weight: 800; }
+@font-face {  font-family: 'NanumSquareNeo'; src: url('assets/fonts/NaverNanumSquareNeo_woff/NanumSquareNeoTTF-eHv.woff') format("woff");  font-weight: 900; } */
+
+/* @font-face {  font-family: 'NotoSansKR'; src: url('assets/fonts/Noto_Sans_KR/NotoSansKR-Thin.otf') format("otf");  font-weight: 100; }
+@font-face {  font-family: 'NotoSansKR'; src: url('assets/fonts/Noto_Sans_KR/NotoSansKR-Light.otf') format("otf");  font-weight: 300; }
+@font-face {  font-family: 'NotoSansKR'; src: url('assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf') format("otf");  font-weight: 400; }
+@font-face {  font-family: 'NotoSansKR'; src: url('assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf') format("otf");  font-weight: 500; }
+@font-face {  font-family: 'NotoSansKR'; src: url('assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf') format("otf");  font-weight: 700; }
+@font-face {  font-family: 'NotoSansKR'; src: url('assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf') format("otf");  font-weight: 900; } */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream1.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream2.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream3.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream4.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream5.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream6.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream7.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream8.otf") format("opentype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "S-Core-Dream";
+  src: url("assets/fonts/S-Core_Dream_OTF/SCDream9.otf") format("opentype");
+  font-weight: 900;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif; */
+  /* font-family: 'NanumSquareNeo'; */
+  /* font-family: 'Noto Sans KR'; */
+  font-family: "S-Core-Dream";
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+
+  .btn-normal {
+    @apply px-3 text-black/75 py-2 text-sm bg-slate-100 hover:bg-slate-300 active:bg-slate-400 rounded-lg;
+  }
+
+  .btn-normal2 {
+    @apply px-3 text-white py-2 font-bold text-sm bg-[#464344] disabled:opacity-50 enabled:hover:bg-[#464344]/70 enabled:active:bg-[#464344]/90 rounded-lg;
+  }
+
+  .input-normal {
+    @apply px-2 py-2 text-sm text-black rounded-md;
+  }
+
+  .input-white-green {
+    @apply px-3 py-2 rounded-md focus:shadow outline-green-500/50 focus:outline disabled:border;
+  }
+
+  .btn-gray {
+    @apply px-3 text-white py-2 font-bold text-sm bg-[#464344] disabled:opacity-50 enabled:hover:bg-[#464344]/70 enabled:active:bg-[#464344]/90 rounded-lg;
+  }
+
+  /* input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  input[type="checkbox"]:checked {
+    background: #32e732;
+    border: none;
+  } */
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background: #d0d0d0;
+    opacity: 30%;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #607fbd;
+    border: 2px solid #607fbd;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #607fbd;
+    border: 2px solid #607fbd;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:active {
+    background: #607fbd;
+    border: 2px solid #607fbd;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:focus {
+    background: #607fbd;
+    border: 2px solid #607fbd;
+  }
+}
+
+/* bg-[#e8e6da] */
+@layer base {
+  :root {
+    /* --background: 0 0% 100%; */
+    --background: #e8e6da;
+
+    --foreground: 222.2 84% 4.9%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --ring: 217.2 32.6% 17.5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.pt1 {
+  background-color: #eee;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  background-image: -webkit-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -webkit-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: -moz-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -moz-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: -ms-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -ms-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: -o-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -o-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    );
+}

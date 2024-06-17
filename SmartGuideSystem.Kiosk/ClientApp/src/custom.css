@@ -1,0 +1,38 @@
+/* Provide sufficient contrast against white background */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  .round_primary {
+    @apply bg-black/30 border-[#a6a6a6]/30 text-white/50 border-[3px] shadow-[0_5px_5px_0px_rgba(0,0,0,0.5)]  cursor-pointer rounded-[17px] flex justify-center items-center font-bold ;
+  }
+  .round_primary.selected {
+    @apply bg-primary-back border-white text-black/90 border-[3px] shadow-[0_5px_5px_0px_rgba(0,0,0,0.5)]  cursor-pointer rounded-[17px] flex justify-center items-center font-bold ;
+  }
+  
+  .round_secondary {
+    @apply bg-black/30 rounded-[13px] font-bold  text-white/50 border-[#a6a6a6] border-[3px]  shadow-[0_5px_5px_0px_rgba(0,0,0,0.5)];
+    
+  }
+  .round_secondary.selected {
+    @apply bg-accent-default  text-white border-accent-border;
+  }
+
+
+  .text_topLeader {
+    @apply text-[36px] font-black text-black/90;
+  }
+  .text_leader {
+    @apply text-[30px] font-black text-black/90;
+  }
+  .text_member {
+    @apply text-[24px] font-black text-black/90;
+  }
+  .text_description {
+    @apply text-[16px] font-black text-black/70 leading-[24px]; 
+  }
+}

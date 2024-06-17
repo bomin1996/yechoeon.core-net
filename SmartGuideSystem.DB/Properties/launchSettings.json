@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SmartGuideSystem.DB": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53354;http://localhost:53359"
+    }
+  }
+}

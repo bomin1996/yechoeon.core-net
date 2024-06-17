@@ -1,0 +1,1 @@
+export type SeatType = "Member" | "Boss" | "Empty";

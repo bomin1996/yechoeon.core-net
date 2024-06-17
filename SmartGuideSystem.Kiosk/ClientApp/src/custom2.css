@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+
+  .btn-normal {
+    @apply px-3 text-black/75 py-2 text-sm bg-slate-100 hover:bg-slate-300 active:bg-slate-400 rounded-lg;
+  }
+
+  .btn-normal2 {
+    @apply px-3 text-white py-2 font-bold text-sm bg-[#464344] enabled:hover:bg-[#464344]/70 enabled:active:bg-[#464344]/90 rounded-lg;
+  }
+
+  .input-normal {
+    @apply px-2 py-2 text-sm text-black rounded-md;
+  }
+
+  .list_secondary {
+    @apply bg-black/30 rounded-[13px] font-bold  text-white/70 border-[#a6a6a6]/70 border-[3px]  shadow-[0_5px_5px_0px_rgba(0,0,0,0.5)];
+  }
+  .list_secondary.selected {
+    @apply bg-accent-default  text-white/90 border-accent-border;
+  }
+
+  .btn-img-normal {
+    @apply py-2 px-4 bg-[#019099] border-[#04bcbe] text-white font-semibold rounded-lg  shadow-[0_5px_5px_0px_rgba(0,0,0,0.5)];
+  }
+
+  .list_gosi_secondary {
+    @apply bg-black/30 rounded-[13px] font-bold  text-white/70 border-[#a6a6a6]/70 border-[3px]  shadow-[0_5px_5px_0px_rgba(0,0,0,0.5)];
+  }
+  .list_gosi_secondary.selected {
+    @apply bg-accent-default  text-white/90 border-accent-border;
+  }
+}
